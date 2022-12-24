@@ -6,5 +6,7 @@ public class AdvancedRobotRace {
 	
 	
 	
-	//FINISH IT IN LEVEL 3 MODULE 0
+	//FINISHED IT IN LEVEL 3 MODULE 0
+	
+	//I added threads to level 3 module 0 itself
 }

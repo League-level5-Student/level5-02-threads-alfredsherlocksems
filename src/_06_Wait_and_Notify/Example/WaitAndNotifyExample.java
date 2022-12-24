@@ -9,6 +9,8 @@ public class WaitAndNotifyExample {
 		 Now, change s1 and s2 to take in new SynchedThreadPrinter objects instead 
 		 of ThreadPrinter. How has the output changed?
 		 
+		 THEY PRINT AT THE SAME TIME
+		 
 		 Take a look at the SynchedThreadPrinter class to observe how synchronized, 
 		 wait, and notify are all used to control the order of the print statements
 		 even though they are run from different threads.
@@ -19,8 +21,8 @@ public class WaitAndNotifyExample {
 	
 	
 	public static void main(String[] args) {
-		Thread s1 = new Thread(new ThreadPrinter());
-		Thread s2 = new Thread(new ThreadPrinter());
+		Thread s1 = new Thread(new SynchedThreadPrinter());
+		Thread s2 = new Thread(new SynchedThreadPrinter());
 		
 		s1.start();
 		s2.start();
